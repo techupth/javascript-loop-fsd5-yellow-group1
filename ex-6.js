@@ -2,6 +2,16 @@
 let companyName = "TechUp Thailand";
 let reversedCompanyName = "";
 
-// Start coding here
+for (let charIndex in companyName) {
+  console.log(
+    (reversedCompanyName =
+      reversedCompanyName +
+      companyName[Number(companyName.length - 1 - charIndex)])
+  );
+}
 
 console.log(reversedCompanyName);
+
+for (let char of companyName) {
+  reversedCompanyName = char + reversedCompanyName;
+}
